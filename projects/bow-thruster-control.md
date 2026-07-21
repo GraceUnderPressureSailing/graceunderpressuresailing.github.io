@@ -6,8 +6,9 @@ permalink: /projects/bow-thruster-control/
 
 <p class="project-deck">From a sticking button to a serviceable control</p>
 
-**Status (July 2026):** Stainless faceplate received and enlarged for the final
-16 mm switches; wiring, installation and commissioning still to come.
+**Status (July 2026):** Stainless faceplate and CAD revised with 16.2 mm
+clearance holes for the final 16 mm switches; wiring, installation and
+commissioning still to come.
 
 <figure class="project-hero">
   <img src="/assets/images/bow-thruster/grace-under-pressure-sailing.jpg"
@@ -147,22 +148,20 @@ almost the same place while replacing the entire exposed front.
 The plate was manufactured in passivated 316L stainless steel, 3 mm thick,
 with four through-bolt clearances, rounded corners and a small perimeter
 chamfer. It was originally cut with two 12.2 mm switch openings; after the
-ergonomic test, those were drilled out to accept the 16 mm MPB16 switches.
-
-The Onshape model still records the original 12.2 mm openings and needs to be
-updated to match the modified plate before it is presented as the current
-design.
+ergonomic test, those were drilled to 16.2 mm to provide clearance for the
+16 mm MPB16 switch barrels. The CAD model has now been updated to match.
 
 ### CAD model and downloads
 
 - [Working faceplate model in Onshape](https://cad.onshape.com/documents/bab55f22eadae1309f6581ff/w/6a2407166261e4ce7e9ad419/e/d4661129cfbdfaf08c7402ee)
   (an Onshape account may be required).
-- **STEP download:** to be added after the model has been updated to the
-  as-built 16 mm switch openings.
+- [Download the current AP242 STEP model](/assets/downloads/bow-thruster/bow-thruster-faceplate-16.2mm.step)
+  (exported 21 July 2026).
 
-> **Model status:** The linked working model currently shows the earlier
-> 12.2 mm switch holes. It is useful as design history, but it is not yet the
-> as-built plate and should not be used as a manufacturing file.
+> **Model status:** The current Onshape and STEP models use 16.2 mm switch
+> openings. They document this one installation; verify every dimension,
+> material and clearance against the intended switches and mounting location
+> before using the file for manufacture.
 
 This also became a useful first exercise in parametric CAD: constrain the outer
 dimensions, align and position the switch centres, add the mounting holes,
@@ -188,14 +187,13 @@ At the time of writing, the 16 mm switches and resistors are on hand and the
 stainless plate has been enlarged to accept the switches. The remaining work is
 to:
 
-1. update the Onshape model from 12.2 mm to the as-built 16 mm openings;
-2. confirm whether external LED current limiting is required;
-3. build and continuity-test the removable loom;
-4. mount the retained controller behind the console;
-5. verify command direction and released-switch behaviour with the thruster
+1. confirm whether external LED current limiting is required;
+2. build and continuity-test the removable loom;
+3. mount the retained controller behind the console;
+4. verify command direction and released-switch behaviour with the thruster
    safely isolated;
-6. complete controlled dockside commissioning; and
-7. record the finished installation and any changes prompted by testing.
+5. complete controlled dockside commissioning; and
+6. record the finished installation and any changes prompted by testing.
 
 A push-on weather cover is also planned. The original failure appears to have
 been driven at least as much by ultraviolet exposure and accumulated deposits
