@@ -29,7 +29,7 @@ the vessel concerned.
     <p class="status">BUILD IN PROGRESS</p>
     <h3><a href="/projects/bow-thruster-control/">Rebuilding the bow-thruster control</a></h3>
     <p>Diagnosing two sticking helm switches, retaining the healthy Quick
-    electronics, and designing a serviceable weather-exposed replacement.</p>
+    electronics, and developing a serviceable 316L and IP67 replacement.</p>
   </section>
 </div>
 

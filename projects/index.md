@@ -22,4 +22,4 @@ thermal printing, replay and passage analysis.
 Investigation and replacement of an ageing bow-thruster control system, with
 the diagnosis, teardown and design decisions illustrated as the work proceeds.
 
-**Status:** Replacement designed and parts ordered; installation pending.
+**Status:** Faceplate fabricated and final switches selected; installation pending.

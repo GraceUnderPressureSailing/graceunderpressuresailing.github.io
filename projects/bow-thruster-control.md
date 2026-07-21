@@ -6,8 +6,8 @@ permalink: /projects/bow-thruster-control/
 
 <p class="project-deck">From a sticking button to a serviceable control</p>
 
-**Status (July 2026):** Replacement switches selected and the new faceplate
-ordered; installation and commissioning still to come.
+**Status (July 2026):** Stainless faceplate received and enlarged for the final
+16 mm switches; wiring, installation and commissioning still to come.
 
 <figure class="project-hero">
   <img src="/assets/images/bow-thruster/grace-under-pressure-sailing.jpg"
@@ -115,19 +115,27 @@ The replacement therefore keeps the original Quick PCB, buzzer, main cable,
 connectors and control behaviour. Only the weather-exposed user interface is
 being replaced.
 
-The new switches are RS PRO AV01 illuminated momentary SPST units:
+The first replacements were 12 mm RS PRO AV01 illuminated momentary switches.
+Mechanically, they fitted the original structural plate beautifully. The
+problem only became apparent when they were operated in their intended flush
+position: the actuators were too narrow to press easily and confidently with a
+finger. A control can be electrically correct and still fail an ergonomic test.
 
-- red ring, stock number **111-6531**;
-- green ring, stock number **111-6529**;
-- 12 mm panel mounting;
-- normally-open momentary contacts; and
-- IP65/IP67 environmental ratings.
+The final selection is the larger, pre-wired RS PRO MPB16 series:
 
-They fit the original 12.2 mm structural holes, but the factory controller used
-a second cosmetic fascia with 15 mm openings and long projecting caps. Mounted
-in the original backing plate, the new flush switches sit too low and their
-bezels do not cover those larger openings. Spacer bushes could have made the
-geometry work, but would retain an awkward stack of old parts.
+- green illuminated momentary SPST, stock number **175-9549**;
+- red illuminated momentary SPST, stock number **175-9392**;
+- 16 mm panel mounting;
+- normally-open momentary contacts;
+- pre-wired tails; and
+- IP67 environmental rating.
+
+Before that change, the 12 mm switches also exposed a mismatch in the factory
+construction. The original structural plate had 12.2 mm holes, while a second
+cosmetic fascia used 15 mm openings and long projecting caps. Mounted behind
+that fascia, the flush replacements sat too low and their bezels did not cover
+the larger openings. Spacer bushes could have made the geometry work, but would
+retain an awkward stack of old parts.
 
 The cleaner solution is a new external faceplate with the switches mounted
 directly in it, while the original housing and electronics move immediately
@@ -136,13 +144,14 @@ almost the same place while replacing the entire exposed front.
 
 ## The new faceplate
 
-The current manufacturing model is a small, passivated 316L stainless-steel
-plate, 3 mm thick, with:
+The plate was manufactured in passivated 316L stainless steel, 3 mm thick,
+with four through-bolt clearances, rounded corners and a small perimeter
+chamfer. It was originally cut with two 12.2 mm switch openings; after the
+ergonomic test, those were drilled out to accept the 16 mm MPB16 switches.
 
-- two 12.2 mm switch openings;
-- four clearance holes for through-bolting;
-- rounded corners; and
-- a small perimeter chamfer to remove the sharp laser-cut edge.
+The Onshape model still records the original 12.2 mm openings and needs to be
+updated to match the modified plate before it is presented as the current
+design.
 
 This also became a useful first exercise in parametric CAD: constrain the outer
 dimensions, align and position the switch centres, add the mounting holes,
@@ -152,21 +161,30 @@ was sufficient for automated manufacturing quotes.
 The original connectors will be retained through a short removable adapter
 loom, avoiding cuts to the Quick PCB or its cable. The old switch contacts used
 two black conductors and required no polarity. The original panel had one
-indicator LED on the port control; the final behaviour of the two new LED rings
-will be decided only after the supply and current limiting have been measured.
+indicator LED on the port control.
+
+Three 500 Ω, 0.5 W, 0.1% metal-film resistors (TE Connectivity
+**UPF50B500RV**, RS stock **807-3762**) have been bought so that external LED
+current limiting is available if required. It is not yet confirmed whether the
+MPB16 switch assemblies include suitable resistance internally, nor whether
+the existing Quick output is already current-limited. The LED rings will not be
+wired by assumption: the circuit will be measured first, and the final
+arrangement recorded after testing.
 
 ## What remains
 
-At the time of writing, the switches are on hand and the stainless plate has
-been ordered. The remaining work is to:
+At the time of writing, the 16 mm switches and resistors are on hand and the
+stainless plate has been enlarged to accept the switches. The remaining work is
+to:
 
-1. inspect the fabricated plate and confirm switch fit;
-2. build and continuity-test the removable loom;
-3. mount the retained controller behind the console;
-4. verify command direction and released-switch behaviour with the thruster
+1. update the Onshape model from 12.2 mm to the as-built 16 mm openings;
+2. confirm whether external LED current limiting is required;
+3. build and continuity-test the removable loom;
+4. mount the retained controller behind the console;
+5. verify command direction and released-switch behaviour with the thruster
    safely isolated;
-5. complete controlled dockside commissioning; and
-6. record the finished installation and any changes prompted by testing.
+6. complete controlled dockside commissioning; and
+7. record the finished installation and any changes prompted by testing.
 
 A push-on weather cover is also planned. The original failure appears to have
 been driven at least as much by ultraviolet exposure and accumulated deposits
@@ -180,6 +198,8 @@ should be worthwhile.
 - A sealed enclosure may have preserved electronics even when its exposed
   controls look dreadful.
 - Standard, documented parts make a future repair easier.
+- A bench fit is not the same as a usable human interface; test the control with
+  real fingers in its real mounting position.
 - A sticking thruster command is a safety fault, not a cosmetic inconvenience.
 
 > **Safety-critical system:** A bow thruster combines very high electrical
