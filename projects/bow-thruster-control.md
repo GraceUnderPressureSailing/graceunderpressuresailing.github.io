@@ -153,6 +153,17 @@ The Onshape model still records the original 12.2 mm openings and needs to be
 updated to match the modified plate before it is presented as the current
 design.
 
+### CAD model and downloads
+
+- [Working faceplate model in Onshape](https://cad.onshape.com/documents/bab55f22eadae1309f6581ff/w/6a2407166261e4ce7e9ad419/e/d4661129cfbdfaf08c7402ee)
+  (an Onshape account may be required).
+- **STEP download:** to be added after the model has been updated to the
+  as-built 16 mm switch openings.
+
+> **Model status:** The linked working model currently shows the earlier
+> 12.2 mm switch holes. It is useful as design history, but it is not yet the
+> as-built plate and should not be used as a manufacturing file.
+
 This also became a useful first exercise in parametric CAD: constrain the outer
 dimensions, align and position the switch centres, add the mounting holes,
 extrude the plate, then apply the corner fillets and edge chamfer. A STEP model
