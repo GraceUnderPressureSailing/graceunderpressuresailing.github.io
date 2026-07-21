@@ -1,0 +1,66 @@
+---
+---
+
+@import "minima";
+
+$deep-blue: #163a59;
+$sea-blue: #28789b;
+$warm-sand: #f5f0e5;
+
+body {
+  color: #24313a;
+}
+
+.site-header {
+  border-top: 5px solid $sea-blue;
+}
+
+.site-title,
+.site-title:visited {
+  color: $deep-blue;
+  font-weight: 650;
+}
+
+h1,
+h2,
+h3 {
+  color: $deep-blue;
+}
+
+a,
+a:visited {
+  color: #17698b;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  background: $warm-sand;
+  border-left: 4px solid $sea-blue;
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+}
+
+.project-card h3 {
+  margin-top: 0.25rem;
+}
+
+.status {
+  color: #52636e;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0;
+}
+
+blockquote {
+  background: #f4f7f8;
+  border-left-color: #d08a36;
+  color: #344650;
+  padding: 0.8rem 1rem;
+}

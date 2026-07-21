@@ -1,0 +1,14 @@
+title: Grace Under Pressure Sailing
+description: Practical boat systems, field engineering and passage notes.
+url: https://graceunderpressuresailing.github.io
+theme: minima
+markdown: kramdown
+
+header_pages:
+  - projects/index.md
+  - notes/index.md
+  - safety.md
+  - about.md
+
+exclude:
+  - README.md
