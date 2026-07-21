@@ -4,7 +4,7 @@ title: Rebuilding the bow-thruster control
 permalink: /projects/bow-thruster-control/
 ---
 
-# From a sticking button to a serviceable control
+<p class="project-deck">From a sticking button to a serviceable control</p>
 
 **Status (July 2026):** Replacement switches selected and the new faceplate
 ordered; installation and commissioning still to come.
