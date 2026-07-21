@@ -26,10 +26,10 @@ the vessel concerned.
   </section>
 
   <section class="project-card">
-    <p class="status">WRITE-UP IN PROGRESS</p>
-    <h3><a href="/projects/bow-thruster-control/">Bow-thruster control replacement</a></h3>
-    <p>Replacing an ageing control system while retaining clear isolation,
-    predictable operation and fail-safe behaviour.</p>
+    <p class="status">BUILD IN PROGRESS</p>
+    <h3><a href="/projects/bow-thruster-control/">Rebuilding the bow-thruster control</a></h3>
+    <p>Diagnosing two sticking helm switches, retaining the healthy Quick
+    electronics, and designing a serviceable weather-exposed replacement.</p>
   </section>
 </div>
 

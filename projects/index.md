@@ -20,6 +20,6 @@ thermal printing, replay and passage analysis.
 ## [Bow-thruster control replacement](/projects/bow-thruster-control/)
 
 Investigation and replacement of an ageing bow-thruster control system, with
-particular attention to isolation, interlocks and failure behaviour.
+the diagnosis, teardown and design decisions illustrated as the work proceeds.
 
-**Status:** Installed; detailed write-up in preparation.
+**Status:** Replacement designed and parts ordered; installation pending.
