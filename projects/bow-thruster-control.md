@@ -6,9 +6,9 @@ permalink: /projects/bow-thruster-control/
 
 <p class="project-deck">From a sticking button to a serviceable control</p>
 
-**Status (July 2026):** Stainless faceplate and CAD revised with 16.2 mm
-clearance holes for the final 16 mm switches; wiring, installation and
-commissioning still to come.
+**Status (July 2026):** Stainless faceplate and 16 mm switches installed. An
+initial functional test confirmed that both thruster commands work; the
+behind-console wiring shown below is still to be tidied and documented.
 
 <figure class="project-hero">
   <img src="/assets/images/bow-thruster/grace-under-pressure-sailing.jpg"
@@ -131,6 +131,13 @@ The final selection is the larger, pre-wired RS PRO MPB16 series:
 - pre-wired tails; and
 - IP67 environmental rating.
 
+<figure>
+  <img src="/assets/images/bow-thruster/prewired-16mm-switches.jpg"
+       loading="lazy"
+       alt="Pair of pre-wired 16 mm stainless illuminated momentary switches with their mounting nuts and seals">
+  <figcaption>The final 16 mm switches arrived pre-wired, with separate conductors for their contacts and illuminated rings.</figcaption>
+</figure>
+
 Before that change, the 12 mm switches also exposed a mismatch in the factory
 construction. The original structural plate had 12.2 mm holes, while a second
 cosmetic fascia used 15 mm openings and long projecting caps. Mounted behind
@@ -150,6 +157,13 @@ with four through-bolt clearances, rounded corners and a small perimeter
 chamfer. It was originally cut with two 12.2 mm switch openings; after the
 ergonomic test, those were drilled to 16.2 mm to provide clearance for the
 16 mm MPB16 switch barrels. The CAD model has now been updated to match.
+
+<figure>
+  <img src="/assets/images/bow-thruster/faceplate-assembled.jpg"
+       loading="lazy"
+       alt="Passivated stainless bow-thruster faceplate assembled on the bench with two 16 mm flush switches">
+  <figcaption>The revised plate assembled on the bench. The larger actuators are much easier to operate confidently than the first 12 mm pair.</figcaption>
+</figure>
 
 ### CAD model and downloads
 
@@ -175,25 +189,56 @@ indicator LED on the port control.
 
 Three 500 Ω, 0.5 W, 0.1% metal-film resistors (TE Connectivity
 **UPF50B500RV**, RS stock **807-3762**) have been bought so that external LED
-current limiting is available if required. It is not yet confirmed whether the
-MPB16 switch assemblies include suitable resistance internally, nor whether
-the existing Quick output is already current-limited. The LED rings will not be
-wired by assumption: the circuit will be measured first, and the final
-arrangement recorded after testing.
+current limiting is available if required. The installation-stage circuit
+proved that the switch contacts and illumination work with the retained Quick
+controller. The final as-built record will document the current-limiting
+arrangement after the wiring has been tidied, rather than attempting to infer it
+from the temporary test connections.
+
+## Physical installation
+
+The new plate is through-bolted over the original opening beside the starboard
+plotter and windlass control. The two switches mount directly through the
+stainless plate, avoiding the recessed factory fascia and its stand-offs.
+
+<figure>
+  <img src="/assets/images/bow-thruster/faceplate-installed.jpg"
+       loading="lazy"
+       alt="New stainless bow-thruster control installed beside the starboard Raymarine plotter and Quick windlass control">
+  <figcaption>The new control in its working position. The plate covers the former opening and the two flush switches remain easy to reach.</figcaption>
+</figure>
+
+The original Quick cylindrical enclosure, PCB, buzzer and main cable remain
+immediately behind the console. This preserves the original control electronics
+and provides a serviceable boundary between them and the replacement switches.
+The lever connectors visible in the photograph were used for the installation
+and functional test; this is not presented as the finished wiring arrangement.
+
+<figure>
+  <img src="/assets/images/bow-thruster/retained-controller-installed.jpg"
+       loading="lazy"
+       alt="Original Quick controller housing and PCB retained behind the console with temporary lever-connector wiring">
+  <figcaption>Behind the console during testing: the healthy Quick controller retained, with the new switch wiring still awaiting its final tidy-up.</figcaption>
+</figure>
+
+Both directional commands and the switch illumination operated correctly in
+the initial test. That proves the replacement interface and retained controller
+work together; it does not remove the need to secure, protect, label and record
+the finished wiring.
 
 ## What remains
 
-At the time of writing, the 16 mm switches and resistors are on hand and the
-stainless plate has been enlarged to accept the switches. The remaining work is
-to:
+At the time of writing, the new controls have passed an initial functional
+test. The remaining work is to:
 
-1. confirm whether external LED current limiting is required;
-2. build and continuity-test the removable loom;
-3. mount the retained controller behind the console;
-4. verify command direction and released-switch behaviour with the thruster
-   safely isolated;
-5. complete controlled dockside commissioning; and
-6. record the finished installation and any changes prompted by testing.
+1. record the final LED current-limiting arrangement;
+2. replace or tidy the installation-stage connections into a secured,
+   strain-relieved loom;
+3. secure and protect the retained controller and wiring behind the console;
+4. label and continuity-test the finished arrangement;
+5. repeat the released-switch and command-direction checks after the wiring is
+   finalised; and
+6. photograph and record the completed internal installation.
 
 A push-on weather cover is also planned. The original failure appears to have
 been driven at least as much by ultraviolet exposure and accumulated deposits
@@ -213,7 +258,8 @@ should be worthwhile.
 
 > **Safety-critical system:** A bow thruster combines very high electrical
 > currents with machinery capable of moving the vessel unexpectedly. The work
-> described here is incomplete and has not yet passed final commissioning.
-> Isolate all relevant supplies, follow the equipment manufacturer's
-> instructions, and obtain competent marine-electrical assistance where
-> appropriate.
+> shown here includes temporary installation-stage wiring and should not be
+> treated as a wiring recipe or a finished installation. Isolate all relevant
+> supplies, follow the equipment manufacturer's instructions, verify all
+> functions after final assembly, and obtain competent marine-electrical
+> assistance where appropriate.
