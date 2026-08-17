@@ -20,9 +20,9 @@ the vessel concerned.
   <section class="project-card">
     <p class="status">IN SERVICE</p>
     <h3><a href="/projects/logprinter/">LogPrinter</a></h3>
-    <p>A Raspberry Pi appliance that captures NMEA 2000 data, maintains a live
-    picture of the boat, prints a compact ship's log and preserves passages for
-    later analysis.</p>
+    <p>An installed Raspberry Pi appliance that automatically captures each
+    NMEA 2000 passage, maintains a live picture of the boat and produces
+    summaries for print and later analysis.</p>
   </section>
 
   <section class="project-card">

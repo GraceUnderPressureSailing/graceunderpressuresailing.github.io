@@ -6,7 +6,7 @@ permalink: /projects/logprinter/
 
 # LogPrinter
 
-**Status:** In service
+**Status:** Installed and automatically recording passages; printer connection pending
 **Platform:** Raspberry Pi, Java 21
 **Data source:** Digital Yacht NavLink2, raw NMEA 2000 over UDP
 
@@ -15,14 +15,62 @@ entry from the data already present on the boat. It has grown into a small
 appliance that also preserves the raw evidence needed to understand a passage
 afterwards.
 
+<figure class="project-hero project-hero--portrait">
+  <img src="/assets/images/logprinter/raspberry-pi-installed.jpg"
+       alt="The LogPrinter Raspberry Pi installed behind the chart-table instrument panel">
+  <figcaption>
+    The Raspberry Pi installed behind the chart-table instrument panel. The
+    mounting board keeps the appliance accessible while leaving it normally
+    hidden from view.
+  </figcaption>
+</figure>
+
 ## What it does
 
 - Receives and decodes selected NMEA 2000 messages.
 - Maintains a coherent snapshot of the boat's current state.
-- Produces compact output for a 58 mm thermal printer.
+- Uses the instrument-power signal to open and close a passage automatically.
+- Formats compact output for a 58 mm thermal printer.
 - Records the original raw message stream without replacing it with summaries.
 - Replays recordings through the same processing path used for live data.
-- Exports GPS tracks for passage review in OpenCPN.
+- Produces passage summaries and exports GPS tracks for review in OpenCPN.
+
+## Current installation
+
+The Pi is intended to remain powered. It runs LogPrinter as a `systemd` service
+and listens for the NMEA UDP feed, while an isolated relay contact tells it
+whether the boat's instrument network is on. The contact pulls GPIO 17 low
+against the Pi's internal pull-up; no instrument-bus voltage is applied to the
+GPIO.
+
+When the instruments come on, LogPrinter starts a new timestamped passage and
+raw NMEA capture. When they go off, it closes the capture and finalises the
+passage summary, but leaves the service ready for the next trip. An end-to-end
+test aboard on 17 August 2026 created a new capture, grew it while the
+instruments were active, and left the closed 206 KB file unchanged after they
+were switched off.
+
+The 58 mm printer formatting and output path are implemented. Physically
+connecting the printer is the remaining installation step.
+
+<div class="image-pair">
+  <figure>
+    <img src="/assets/images/logprinter/chart-table-location.jpg"
+         alt="Grace Under Pressure's chart table and instrument panel">
+    <figcaption>
+      The chart table and instrument panel. The appliance lives behind this
+      area, close to power and the vessel's navigation electronics.
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/logprinter/prototype-assembly.jpg"
+         alt="Raspberry Pi, DC to DC converter and isolated input assembled on a mounting board">
+    <figcaption>
+      An earlier assembly stage used to work out the regulated 5 V supply,
+      terminal access and isolated instrument-power signal before installation.
+    </figcaption>
+  </figure>
+</div>
 
 ## Design priorities
 

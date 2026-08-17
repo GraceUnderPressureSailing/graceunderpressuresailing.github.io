@@ -15,7 +15,8 @@ drop-in designs for another boat.
 A Java 21 and Raspberry Pi appliance for NMEA 2000 capture, live boat state,
 thermal printing, replay and passage analysis.
 
-**Status:** In service and recording real passages.
+**Status:** Installed with automatic passage capture in service; printer
+connection pending.
 
 ## [Bow-thruster control replacement](/projects/bow-thruster-control/)
 
