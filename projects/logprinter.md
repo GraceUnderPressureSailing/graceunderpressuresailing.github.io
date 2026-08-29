@@ -6,7 +6,7 @@ permalink: /projects/logprinter/
 
 # LogPrinter
 
-**Status:** Installed and automatically recording passages; printer connection pending
+**Status:** Complete — installed, automatically recording passages and printing snapshots
 **Platform:** Raspberry Pi, Java 21
 **Data source:** Digital Yacht NavLink2, raw NMEA 2000 over UDP
 
@@ -15,13 +15,12 @@ entry from the data already present on the boat. It has grown into a small
 appliance that also preserves the raw evidence needed to understand a passage
 afterwards.
 
-<figure class="project-hero project-hero--portrait">
-  <img src="/assets/images/logprinter/raspberry-pi-installed.jpg"
-       alt="The LogPrinter Raspberry Pi installed behind the chart-table instrument panel">
+<figure class="project-hero">
+  <img src="/assets/images/logprinter/installed-overview.jpg"
+       alt="The LogPrinter printer installed in the chart-table instrument panel">
   <figcaption>
-    The Raspberry Pi installed behind the chart-table instrument panel. The
-    mounting board keeps the appliance accessible while leaving it normally
-    hidden from view.
+    The completed LogPrinter installation: the 58 mm printer is mounted in the
+    chart-table instrument panel, with a live passage print visible.
   </figcaption>
 </figure>
 
@@ -50,8 +49,11 @@ test aboard on 17 August 2026 created a new capture, grew it while the
 instruments were active, and left the closed 206 KB file unchanged after they
 were switched off.
 
-The 58 mm printer formatting and output path are implemented. Physically
-connecting the printer is the remaining installation step.
+The 58 mm printer is now connected and enabled as a second output alongside
+the raw capture. A first live print test produced a clean result, and the
+installed service is configured to print a compact snapshot after the first
+minute, then every 30 minutes, while retaining the complete raw NMEA passage
+log for later replay and analysis.
 
 <div class="image-pair">
   <figure>
@@ -68,6 +70,25 @@ connecting the printer is the remaining installation step.
     <figcaption>
       An earlier assembly stage used to work out the regulated 5 V supply,
       terminal access and isolated instrument-power signal before installation.
+    </figcaption>
+  </figure>
+</div>
+
+<div class="image-pair">
+  <figure>
+    <img src="/assets/images/logprinter/raspberry-pi-wiring.jpg"
+         alt="The LogPrinter Raspberry Pi and USB wiring installed behind the instrument panel">
+    <figcaption>
+      The Raspberry Pi, USB printer connection and protected wiring installed
+      behind the instrument panel.
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/logprinter/printed-snapshot.jpg"
+         alt="A LogPrinter thermal-paper passage snapshot from the installed printer">
+    <figcaption>
+      A live snapshot printed aboard, showing the compact sailor-facing output
+      produced from the boat data.
     </figcaption>
   </figure>
 </div>
