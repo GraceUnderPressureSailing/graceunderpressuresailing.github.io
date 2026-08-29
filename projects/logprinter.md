@@ -6,9 +6,11 @@ permalink: /projects/logprinter/
 
 # LogPrinter
 
-**Status:** Complete — installed, automatically recording passages and printing snapshots
-**Platform:** Raspberry Pi, Java 21
-**Data source:** Digital Yacht NavLink2, raw NMEA 2000 over UDP
+<p class="project-meta">
+  <strong>Status:</strong> Complete — installed, automatically recording passages and printing snapshots<br>
+  <strong>Platform:</strong> Raspberry Pi, Java 21<br>
+  <strong>Data source:</strong> Digital Yacht NavLink2, raw NMEA 2000 over UDP
+</p>
 
 LogPrinter began with a simple objective: produce a useful physical ship's-log
 entry from the data already present on the boat. It has grown into a small
