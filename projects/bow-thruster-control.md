@@ -6,9 +6,10 @@ permalink: /projects/bow-thruster-control/
 
 <p class="project-deck">From a sticking button to a serviceable control</p>
 
-**Status (July 2026):** Stainless faceplate and 16 mm switches installed. An
-initial functional test confirmed that both thruster commands work; the
-behind-console wiring shown below is still to be tidied and documented.
+**Status (August 2026): Complete.** The stainless faceplate, 16 mm switches and
+removable adapter loom are installed. The finished wiring is enclosed, secured
+and cable-managed behind the helm, and both thruster directions, switch release
+and illumination have been tested.
 
 <figure class="project-hero">
   <img src="/assets/images/bow-thruster/grace-under-pressure-sailing.jpg"
@@ -182,18 +183,31 @@ dimensions, align and position the switch centres, add the mounting holes,
 extrude the plate, then apply the corner fillets and edge chamfer. A STEP model
 was sufficient for automated manufacturing quotes.
 
-The original connectors will be retained through a short removable adapter
-loom, avoiding cuts to the Quick PCB or its cable. The old switch contacts used
-two black conductors and required no polarity. The original panel had one
-indicator LED on the port control.
+The final interface is a short removable adapter loom, avoiding any cuts to the
+Quick PCB or its original cable. A sealed eight-way DEUTSCH DT connector forms
+the service disconnect on the switch side; short pigtails on the other side
+retain the original Quick PCB connectors.
 
-Three 500 Ω, 0.5 W, 0.1% metal-film resistors (TE Connectivity
-**UPF50B500RV**, RS stock **807-3762**) have been bought so that external LED
-current limiting is available if required. The installation-stage circuit
-proved that the switch contacts and illumination work with the retained Quick
-controller. The final as-built record will document the current-limiting
-arrangement after the wiring has been tidied, rather than attempting to infer it
-from the temporary test connections.
+The simple passive circuit was built on pad-per-hole prototyping board rather
+than ordering a batch of custom PCBs for a one-off installation. Each
+illuminated switch has its own 500 Ω, 0.5 W metal-film series resistor (TE Connectivity
+**UPF50B500RV**, RS stock **807-3762**). The two momentary switch-contact pairs
+remain electrically independent from the two LED branches.
+
+<div class="image-pair">
+  <figure>
+    <img src="/assets/images/bow-thruster/adapter-board-open.jpg"
+         loading="lazy"
+         alt="Completed perfboard bow-thruster adapter mounted inside its enclosure">
+    <figcaption>The completed passive adapter: two independent switch circuits and two separately current-limited LED branches.</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/bow-thruster/adapter-wiring-bench.jpg"
+         loading="lazy"
+         alt="Open adapter enclosure with DEUTSCH connector loom and terminated Quick-controller pigtails">
+    <figcaption>Bench assembly before closing the enclosure, with the sealed eight-way connector at one end and the Quick-controller pigtails at the other.</figcaption>
+  </figure>
+</div>
 
 ## Physical installation
 
@@ -211,41 +225,58 @@ stainless plate, avoiding the recessed factory fascia and its stand-offs.
 The original Quick cylindrical enclosure, PCB, buzzer and main cable remain
 immediately behind the console. This preserves the original control electronics
 and provides a serviceable boundary between them and the replacement switches.
-The lever connectors visible in the photograph were used for the installation
-and functional test; this is not presented as the finished wiring arrangement.
+The lever connectors visible in the earlier photograph were only used for the
+installation-stage functional test and have now been replaced by the finished
+adapter loom.
 
 <figure>
   <img src="/assets/images/bow-thruster/retained-controller-installed.jpg"
        loading="lazy"
        alt="Original Quick controller housing and PCB retained behind the console with temporary lever-connector wiring">
-  <figcaption>Behind the console during testing: the healthy Quick controller retained, with the new switch wiring still awaiting its final tidy-up.</figcaption>
+  <figcaption>Behind the console during the initial test. The healthy Quick controller was retained; the temporary lever connections shown here were subsequently removed.</figcaption>
 </figure>
 
-Both directional commands and the switch illumination operated correctly in
-the initial test. That proves the replacement interface and retained controller
-work together; it does not remove the need to secure, protect, label and record
-the finished wiring.
+## Final assembly and commissioning
 
-## What remains
+The perfboard adapter is mounted inside a lidded enclosure screwed to the
+plywood panel behind the helm. The switch cable, controller pigtails and
+DEUTSCH connection are supported and tied into the existing cable runs, while
+the enclosure remains accessible for future inspection or removal.
 
-At the time of writing, the new controls have passed an initial functional
-test. The remaining work is to:
+<figure class="project-hero--portrait">
+  <img src="/assets/images/bow-thruster/adapter-installed-overview.jpg"
+       loading="lazy"
+       alt="Closed bow-thruster adapter enclosure installed and cable-managed behind the helm">
+  <figcaption>The completed installation behind the helm: enclosed adapter, removable connector and supported cable runs.</figcaption>
+</figure>
 
-1. record the final LED current-limiting arrangement;
-2. replace or tidy the installation-stage connections into a secured,
-   strain-relieved loom;
-3. secure and protect the retained controller and wiring behind the console;
-4. label and continuity-test the finished arrangement;
-5. repeat the released-switch and command-direction checks after the wiring is
-   finalised; and
-6. photograph and record the completed internal installation.
+<div class="image-pair">
+  <figure>
+    <img src="/assets/images/bow-thruster/adapter-installed-detail.jpg"
+         loading="lazy"
+         alt="Detailed view of the secured DEUTSCH connector and cable-managed bow-thruster adapter installation">
+    <figcaption>The eight-way service connection secured alongside the existing helm wiring.</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/bow-thruster/adapter-installed-wide.jpg"
+         loading="lazy"
+         alt="Wide view of the finished adapter enclosure, retained Quick controller and surrounding helm wiring">
+    <figcaption>The finished arrangement in context, with the retained Quick controller immediately beside the new adapter enclosure.</figcaption>
+  </figure>
+</div>
 
-A push-on weather cover is also planned. The original failure appears to have
-been driven at least as much by ultraviolet exposure and accumulated deposits
-as by water ingress, so shielding the new controls while the boat is unattended
-should be worthwhile.
+With the final wiring closed up and cable-managed, the system was tested again.
+Both port and starboard commands operate in the correct direction, both
+illuminated switch rings work, and releasing either momentary switch removes
+the command. The repair is now complete.
 
-## Lessons so far
+A push-on weather cover remains a possible future refinement rather than part
+of the completed electrical repair. The original failure appears to have been
+driven at least as much by ultraviolet exposure and accumulated deposits as by
+water ingress, so shielding the new controls while the boat is unattended
+could still be worthwhile.
+
+## Lessons
 
 - Find the installation instructions before applying force.
 - Diagnose the failed layer rather than replacing the most expensive assembly.
@@ -254,12 +285,16 @@ should be worthwhile.
 - Standard, documented parts make a future repair easier.
 - A bench fit is not the same as a usable human interface; test the control with
   real fingers in its real mounting position.
+- For a single, low-current passive adapter, carefully assembled perfboard can
+  be more proportionate than the setup cost of a custom PCB run.
+- A removable connector and enclosed adapter preserve the original loom and
+  make later inspection or replacement straightforward.
 - A sticking thruster command is a safety fault, not a cosmetic inconvenience.
 
 > **Safety-critical system:** A bow thruster combines very high electrical
 > currents with machinery capable of moving the vessel unexpectedly. The work
-> shown here includes temporary installation-stage wiring and should not be
-> treated as a wiring recipe or a finished installation. Isolate all relevant
+> shown here documents one completed repair on one vessel and should not be
+> treated as a wiring recipe for another installation. Isolate all relevant
 > supplies, follow the equipment manufacturer's instructions, verify all
 > functions after final assembly, and obtain competent marine-electrical
 > assistance where appropriate.

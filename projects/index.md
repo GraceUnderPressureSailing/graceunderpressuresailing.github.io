@@ -21,6 +21,7 @@ connection pending.
 ## [Bow-thruster control replacement](/projects/bow-thruster-control/)
 
 Investigation and replacement of an ageing bow-thruster control system, with
-the diagnosis, teardown and design decisions illustrated as the work proceeds.
+the diagnosis, teardown, design decisions and completed installation illustrated
+from failure through to commissioning.
 
-**Status:** Faceplate fabricated and final switches selected; installation pending.
+**Status:** Complete, installed and tested.
